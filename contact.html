@@ -4,7 +4,7 @@
 <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 <title>Contact Us — TechPulse</title>
 <meta name="description" content="Get in touch with TechPulse for editorial inquiries, corrections, tool bug reports, or partnership requests."/>
-<link rel="canonical" href="https://techpulse.example.com/contact.html"/>
+<link rel="canonical" href="https://techpulse.com/contact.html"/>
 <style>*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}html{font-size:16px}body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;background:#fff;color:#1E293B}.site-header{position:sticky;top:0;z-index:1000;background:#fff;border-bottom:1px solid #E2E8F0;height:64px}.container{width:100%;max-width:1400px;margin-inline:auto;padding-inline:clamp(16px,4vw,32px)}.nav-wrapper{display:flex;align-items:center;justify-content:space-between;height:64px}</style>
 <link rel="stylesheet" href="./css/style.css"/>
 </head>
@@ -58,7 +58,7 @@
           <label class="form-label" for="contact-message">Message</label>
           <textarea id="contact-message" class="form-textarea" style="font-family:inherit;min-height:140px" placeholder="Describe your inquiry in detail…"></textarea>
         </div>
-        <p style="font-size:.8125rem;color:var(--meta);margin-bottom:16px">Direct email: <strong style="color:var(--ink)">hello@techpulse.example.com</strong></p>
+        <p style="font-size:.8125rem;color:var(--meta);margin-bottom:16px">Direct email: <strong style="color:var(--ink)">hello@techpulse.com</strong></p>
         <button id="mailto-btn" class="btn btn-primary btn-full btn-lg">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
           Open Email Client to Send
@@ -73,7 +73,7 @@
           <div>
             <h3 style="font-size:1rem;margin-bottom:4px;color:var(--ink);font-weight:700">Editorial</h3>
             <p style="color:var(--meta);font-size:.9375rem;margin-bottom:4px">Article pitches, corrections, and fact-checking requests.</p>
-            <p style="font-family:monospace;font-size:.875rem;color:var(--accent)">editorial@techpulse.example.com</p>
+            <p style="font-family:monospace;font-size:.875rem;color:var(--accent)">editorial@techpulse.com</p>
           </div>
         </div>
         <div class="contact-info-item">
@@ -81,7 +81,7 @@
           <div>
             <h3 style="font-size:1rem;margin-bottom:4px;color:var(--ink);font-weight:700">Tool Bug Reports</h3>
             <p style="color:var(--meta);font-size:.9375rem;margin-bottom:4px">Found a bug? Report it with steps to reproduce.</p>
-            <p style="font-family:monospace;font-size:.875rem;color:var(--accent)">bugs@techpulse.example.com</p>
+            <p style="font-family:monospace;font-size:.875rem;color:var(--accent)">bugs@techpulse.com</p>
           </div>
         </div>
         <div class="contact-info-item">
@@ -89,7 +89,7 @@
           <div>
             <h3 style="font-size:1rem;margin-bottom:4px;color:var(--ink);font-weight:700">Partnerships</h3>
             <p style="color:var(--meta);font-size:.9375rem;margin-bottom:4px">Sponsored content inquiries (editorial independence maintained).</p>
-            <p style="font-family:monospace;font-size:.875rem;color:var(--accent)">partnerships@techpulse.example.com</p>
+            <p style="font-family:monospace;font-size:.875rem;color:var(--accent)">partnerships@techpulse.com</p>
           </div>
         </div>
         <div style="background:var(--bg-ghost);border:1px solid var(--border);border-radius:10px;padding:20px;margin-top:8px">
@@ -117,7 +117,7 @@ document.getElementById('mailto-btn').addEventListener('click', function () {
   if (!name || !email || !message) { alert('Please fill in your name, email, and message before sending.'); return; }
   var sub  = encodeURIComponent('[TechPulse] ' + (subject || 'General Inquiry') + ' — from ' + name);
   var body = encodeURIComponent('From: ' + name + ' <' + email + '>\n\n' + message + '\n\n---\nSent via TechPulse contact form');
-  window.location.href = 'mailto:hello@techpulse.example.com?subject=' + sub + '&body=' + body;
+  window.location.href = 'mailto:hello@techpulse.com?subject=' + sub + '&body=' + body;
   document.getElementById('form-success').classList.add('visible');
 });
 </script>
